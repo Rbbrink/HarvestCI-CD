@@ -19,7 +19,21 @@ By the end of the masterclass, the live URL of your deck is your deliverable.
 Before writing YAML, discuss in your team:
 
 1. What can go wrong between `git push` and a live Pages update?
-2. Which parts should be automated immediately, and which should stay manual for now?
+- Cannot build
+- Test environment different from deployment
+- Tests fail
+- Feature is anders dan klant verwacht 
+
+2. Which parts should be automated immediately, and which should stay manual for 
+
+- (Develop)
+- Tests
+- Build
+- Release 
+- Deploy
+- (Review)
+
+
 3. What signal tells you the pipeline is healthy?
 
 Write your hypotheses down. You will validate them during this assignment.
