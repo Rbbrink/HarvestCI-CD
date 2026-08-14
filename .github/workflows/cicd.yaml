@@ -3,13 +3,13 @@ on: push
 permissions:
   id-token: write
   pages: write
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: check
-        run: echo "check"
+        run: echo "chk"
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
       - name: install dep
