@@ -15,6 +15,8 @@ jobs:
         run: echo "chehk"
       - uses: actions/checkout@v4
       - uses: pnpm/setup@v1
+        with:
+          version: 11
       - uses: actions/cache@v4
         with:
           path: node_modules
