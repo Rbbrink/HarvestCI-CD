@@ -5,4 +5,5 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      run: echo "check"
+      - name: check
+        run: echo "check"
