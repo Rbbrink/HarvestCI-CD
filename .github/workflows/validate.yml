@@ -2,7 +2,8 @@ run-name: slides
 on: 
     pull_request:
         paths: 
-            - 'src/slides.md'
+            - /slides.md
+            - .github/*
 
 permissions:
   id-token: write
