@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check
-        run: echo "chk"
+        run: echo "chehk"
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
       - name: install dep
