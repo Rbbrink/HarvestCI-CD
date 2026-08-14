@@ -2,8 +2,27 @@ run-name: test
 on: push
 
 jobs:
-  test_schedule:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: check
         run: echo "check"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: install dep
+        run: npm install
+      - name: Build Slidev deck
+        run: npx slidev build --base /${{ github.event.repository.name}}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+  
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@4
