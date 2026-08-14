@@ -13,11 +13,11 @@ jobs:
     steps:
       - name: check
         run: echo "chehk"
-      - uses: actions/checkout@v4
-      - uses: pnpm/setup@v1
+      - uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
+      - uses: pnpm/setup@84cb39b217b10273981911c288cd62326dc7c6d2
         with:
           version: 11
-      - uses: actions/cache@v4
+      - uses: actions/cache@3edfce9056124e459a23f683a21433670d47daca
         with:
           path: node_modules
           key: pnpm-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
