@@ -35,6 +35,7 @@ Before writing YAML, discuss in your team:
 
 
 3. What signal tells you the pipeline is healthy?
+- Groen vinkje
 
 Write your hypotheses down. You will validate them during this assignment.
 
