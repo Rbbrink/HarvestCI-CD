@@ -1,3 +1,4 @@
+run-name: slides
 on: 
     pull_request:
         paths: 
